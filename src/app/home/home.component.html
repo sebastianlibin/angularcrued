@@ -1,0 +1,66 @@
+<header>
+    <div class="container">
+        <a href="#">LOGO</a>
+        <nav>
+            <a [routerLink]="['/View']">Edit</a>
+            <a [routerLink]="['/Dashboard']">Update</a>
+            <a [routerLink]="['/Delete']">Delete</a>
+        </nav>
+    </div>
+</header>
+<section>
+    <main>
+        <div class="banner-container">
+            <div class="container">
+                <div class="left-section">
+                    <h1>Welcome to the web page</h1>
+                    <p>Hello ...................</p>
+                    <!-- <button>Login</button> -->
+                </div>
+                <div class="right-section">
+                    <h4>Fill the form</h4>
+                    <form  [formGroup]="sampleFormGroup" autocomplete="off">
+                        <div class="input-group">
+                            <input type="text" id="name" formControlName="Name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" formControlName="Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="password" formControlName="Password"required>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="submit-section">
+                            <input type="Submit" (click)="onsubmit()" class="submit-btn"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="section2">
+            <div class="card-container">
+                <div class="image-container">
+                    <img src="/assets/blue1.jfif" alt="">
+                </div>
+                <h1>Hai</h1>
+            </div>
+            <div class="card-container">
+                <div class="image-container">
+                    <img src="/assets/blue2.jfif" alt="">
+                </div>
+                <h1>Ha</h1>
+            </div>
+            <div class="card-container">
+                <div class="image-container">
+                    <img src="/assets/blue3.jfif" alt="">
+                </div>
+                <h1>H</h1>
+            </div>
+        </section>
+    </main>
+</section>
+<footer>
+    Designed and Developed by <span>Libin</span>
+</footer>
